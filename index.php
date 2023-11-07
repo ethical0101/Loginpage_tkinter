@@ -1,8 +1,7 @@
 <html>
 <head>
-  <title>Run my Python files</title>
+<title>Run my Python files</title>
+<?PHP
+echo shell_exec("python test.py 'parameter1'");
+?>
 </head>
-<body>
-  <button onclick="<?php echo shell_exec('test.py'); ?>">Run Python Script</button>
-</body>
-</html>
